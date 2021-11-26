@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background:url(../img/bg-header.png) ;
+    background-size:cover;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header nav{
+    display : flex;
+    width:1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+header nav .logo{
+    transition: .4s;
+}
+
+header nav .logo:hover{
+    transition: scale(1.1);
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    margin:0 15px;
+}
+
+header nav ul li a{
+    color:#ffffff;
+    font-size:20px;
+    text-decoration: none; 
+    /*Border top me genera un borde superior*/
+    border-top: 2px;
+    border-bottom: 2px transparent tranparent;
+}
+
+header nav ul li a:hover{
+    color:yellow;
+    border-bottom: 2px solid #ffffff;
+    padding: 15px 10px;
+    transition: .4s;
+}
+
+header #hero{
+    text-align: center;
+    margin-top: 150px;
+}
+
+header #hero h1{
+    color: yellow;
+    font-size: 50px;
+    margin:0px;
+}
+
+
+
+header #hero p{
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+header #hero button{
+    text-transform: uppercase;
+    background: yellow;
+    font-size: 35px;
+    color: gray;
+    padding: 12px 40px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+main #planes{
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+main #planes .container{
+    /*width define el ancho de un elemento*/
+    /*heigth define el alto de un elemento*/
+    width: 1200px;
+    /*margin: 0 auto sirver para centrar un elemento*/
+    margin: 0 auto;
+    /*alineacion de texto  text-align*/
+    text-align: center;
+}
+
+main #planes .container h2{
+color: black;
+font-size: 40px;
+}
+
+main #planes .container p{
+    color: black;
+    font-size: 24px;
+}
+
+main #planes .container .fila{
+    /*Sirve para ubicar un elemneto sobre el otro*/
+    display: flex;
+    /*justify-content sirve para organizar el contenidos de manera central: flex-end= izquierda, flex start: derecha,center: centro, space= espacios*/ 
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+main #planes .container .fila .col-4{
+    position: relative;
+}
+
+
+main #planes .container .fila .col-4 h3{
+    color: yellow;
+    font-size: 25px;
+    position: absolute;
+    top:90px;
+    left:0px;
+    right: 0px;
+}
+
+main #destinos{
+    width: 100%;
+    height: 100vh;
+    background:url(../img/bg-destinos.png) ;
+    background-size: cover;
+}
+
+main #destinos{
+    width: 100%;
+    position: relative; 
+}
+
+main #destinos{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+main #destinos .container h4{
+    color: yellow;
+    width: 1200px;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+main #destinos .container p{
+    color:#ffffff;
+    font-size: 20px;
+}
+
+main #destinos .container{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center
+}
+
+main #destinos .container .fila{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+   
+main #destinos .container .fila .col-6{
+    position: relative;
+}
+
+main #destinos .container .fila .col-6 h4{
+    color: yellow;
+    font-size: 25px;
+    position: absolute;
+    top:90px;
+    bottom: 90px;
+    left:0px;
+    right: 0px;
+}
+
+main #destinos .container .fila2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+}
+
+main #destinos .container .fila .col-8{
+    position: relative;
+}
+
+main #destinos .container .fila .col-8 h4{
+    color: yellow;
+    font-size: 25px;
+    position: absolute;
+    top:90px;
+    left:0px;
+    right: 0px;
+}
+
+
+/*Seleccion de contactos*/
+main #contacto{
+    background: yellow;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    text-align: center;
+
+}
+
+main #contacto .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+main #contacto .container h5{
+    font-size: 50px;
+}
+
+main #contacto .container p{
+    font-size: 22px;
+}
+
+main #contacto .container form .fila{
+    display: flex;
+    justify-content: center;
+}
+main #contacto .container form .fila input{
+    width: 400px;
+    /*margin= margen externa*/
+    /*paddgin= margen interna*/
+    padding: 10px 20px;
+    font-size: 22px;
+    margin: 20px;
+}
+
+main #contacto .container form .fila select{
+    width: 440px;
+    /*margin= margen externa*/
+    /*paddgin= margen interna*/
+    padding: 10px 20px;
+    font-size: 22px;
+    margin: 20px;
+}
+
+main #contacto .container form button{
+    padding: 14px 100px;
+    font-size: 24px;
+    color: #ffffff;
+    background: rgb(119, 119, 0);
+    margin-top: 50px;
+}
+
+footer{
+    background: #000000;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    color: #ffffff;
+    font-size: 22px;
+}
